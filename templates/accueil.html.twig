@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Portfolio Segond Nicolas -
+			{% endblock %}
+		</title>
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
+		{% block stylesheets %}
+			<link rel="stylesheet" href="css.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+			<style>
+				* {
+					margin: 0;
+					padding: 0;
+					box-sizing: border-box;
+				}
+
+				#particles-js {
+					width: 100%;
+					height: 100%;
+				}
+			</style>
+		{% endblock %}
+	</head>
+	<body>
+		<div id="preloader">
+			<div id="load">
+				<div>G</div>
+				<div>N</div>
+				<div>I</div>
+				<div>D</div>
+				<div>A</div>
+				<div>O</div>
+				<div>L</div>
+			</div>
+		</div>
+
+		<nav class="navbar">
+			<div class="content">
+				<ul class="menu-list">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+					<ul class="menu-ul">
+						<li>
+							<a href="#header" class="hover-border" id="Accueil">Accueil</a>
+						</li>
+						<li>
+							<a href="#ap" class="hover-border" id="APropos">A propos</a>
+						</li>
+						<li>
+							<a href="#BTS" class="hover-border" id="BTSSIO">BTS</a>
+						</li>
+						<li>
+							<a href="#certif" class="hover-border" id="Certifications">Certifications</a>
+						</li>
+						<li>
+							<a href="#gallery" class="hover-border" id="Projets">Projets</a>
+						</li>
+					</ul>
+					<ul class="menu-ul">
+						<li>
+							<a href="#" class="hover-border" id="Synthese">Synthèse des compétences</a>
+						</li>
+						<li>
+							<a href="Veille.html" class="hover-border" id="veille">Veille Technologique</a>
+						</li>
+					</ul>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero section -->
+
+		<section class="head">
+			<div id="particles-js">
+				<div class="header">
+					<img src="photo1.webp" alt="Photo de Nicolas Segond" class="pdp">
+					<h2>Nicolas Segond</h2>
+					<span class="rotating-text highlight morphext">
+						Je suis
+						<span class="animated fadeIn">
+							étudiant
+						</span>
+					</span>
+					<br>
+					<ul style="display:flex; width: auto; justify-content: center;">
+						<li class="lien">
+							<a href="https://www.linkedin.com/in/nicolassegond/">
+								<i class="fa-brands fa-linkedin-in lien"></i>
+							</a>
+						</li>
+						<li class="lien">
+							<a href="https://github.com/TurboNicoo">
+								<i class="fa-brands fa-github lien"></i>
+							</a>
+						</li>
+						<li class="lien">
+							<a href="https://codepen.io/turbonicoo">
+								<i class="fa-brands fa-codepen lien"></i>
+							</a>
+						</li>
+					</ul>
+					<br>
+					<a href="CV.pdf">
+						<button class="btn btn-4 hover-border-8">
+							<span style="display:flex; justify-content: center;">
+								<i class="fa-solid fa-envelope" style="margin-right: 20px;"></i>
+								Télécharger mon CV
+							</span>
+						</button>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		{% block aProposDeMoi %}{% endblock %}
+
+		{% block BTSSIO %}{% endblock %}
+
+		{% block Projets %}{% endblock %}
+
+		<div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/nicolassegond/"><i class="fa-brands fa-linkedin-in lien"></i></a>
+                    <a href="https://github.com/TurboNicoo"><i class="fa-brands fa-github lien"></i></a>
+                    <a href="https://codepen.io/turbonicoo"><i class="fa-brands fa-codepen lien"></i></a>
+                </div>
+              <hr style="height:2px;border-width:0;color:gray;background-color:white; margin-bottom: 15px;">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#header">Accueil</a></li>
+                    <li class="list-inline-item"><a href="#ap">A Propos de moi</a></li>
+                    <li class="list-inline-item"><a href="#BTS">A Propos du BTS</a></li>
+                    <li class="list-inline-item"><a href="#certif">Certifications</a></li>
+                    <li class="list-inline-item"><a href="#gallery">Mes projets</a></li>
+                    <li class="list-inline-item"><a href="#">Ma synthèse de compétence</a></li>
+                    <li class="list-inline-item"><a href="#">Ma veille technologique</a></li>
+                </ul>
+                <p class="copyright">© Copyright Segond Nicolas</p>
+            </footer>
+        </div>
+		
+		{% block javascripts %}
+			<script>
+			if(document.ready){
+				initComparisons();
+			}
+			</script>
+			<script src="particles.js"></script>
+			<script src="app.js"></script>
+			<script src="js.js" crossorigin="anonymous"></script>
+			<script src="https://kit.fontawesome.com/fda357da01.js" crossorigin="anonymous"></script>
+		{% endblock %}
+	</body>
+</html>

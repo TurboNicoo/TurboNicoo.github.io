@@ -1,0 +1,366 @@
+{% extends 'accueil.html.twig' %}
+
+{% block title %}
+	{{parent()}} Accueil
+{% endblock %}
+
+{% block aProposDeMoi %}
+	<!-- A propos de moi section -->
+	<div id="ap" style="position: relative; margin-bottom: 60px;"></div>
+	<section class="aProposDeMoi" id="close">
+		<p class="title">A Propos de Moi</p>
+		<p class="sub-title" style="margin-bottom: 30px;">Qui-suis-je ?</p>
+		<div class="about">
+			<div class="description">
+				<p class="whoiam">Je suis Nicolas Segond, j'ai 19 ans je réside actuellement à Floringhem, je suis étudiant en première année de BTS Services Informatiques aux Organisations au Lycée Andrée Malraux à Béthune. Passionné par l'informatique orienté développement depuis maintenant quatre ans lors de mes années de lycée où j'ai pu apprendre l'informatique globalement, pour ensuite poursuivre ma passion dans ce BTS</p>
+				<a href="#open__modal" class="btnAbout">
+					Savoir plus !</a>
+			</div>
+			<div class="aProposImg">
+				<img src="web_dev.webp" alt="" class="imgTop img" loading="lazy">
+				<img src="imgBottom.webp" alt="" class="imgBottom img" loading="lazy">
+			</div>
+		</div>
+		<div class="modal-container" id="open__modal">
+			<a href="#close" class="fermer"></a>
+			<div class="pre-modal">
+				<div class="modal">
+					<p class="sub-title">Mon parcours professionnelles et mes expériences</p>
+					<div class="containerTimeLine">
+						<div class="timeline-block timeline-block-right">
+							<div class="marker"></div>
+							<div class="timeline-content">
+								<h3 style="color: white; font-weight: 600; font-size: 24px;">2018 - 2021</h3>
+								<span style="color: white; font-weight: 500; font-size: 18px;">Baccalauréat Générale au lycée Albert Chatelet</span>
+								<p style="color: grey; font-weight: 300; font-size: 14px;">Spécialité Numérique et Science de l'Informatique (NSI), Mathématiques et Physique-Chimie
+								</p>
+							</div>
+						</div>
+
+						<div class="timeline-block timeline-block-right">
+							<div class="marker"></div>
+							<div class="timeline-content">
+								<h3 style="color: white; font-weight: 600; font-size: 24px;">2021</h3>
+								<span style="color: white; font-weight: 500; font-size: 18px;">Acquisition du Baccalauréat Générale mention bien</span>
+								<p style="color: grey; font-weight: 300; font-size: 14px;">Spécialité Numérique et Science de l'Informatique (NSI), Mathématiques et Physique-Chimie</p>
+							</div>
+						</div>
+
+						<div class="timeline-block timeline-block-right">
+							<div class="marker"></div>
+							<div class="timeline-content">
+								<h3 style="color: white; font-weight: 600; font-size: 24px;">2021</h3>
+								<span style="color: white; font-weight: 500; font-size: 18px;">1ère année de Brevet Technicien Supérieur Services Informatiques aux Organisations</span>
+								<p style="color: grey; font-weight: 300; font-size: 14px;">Avec l'option Solutions logiciels Appliqués Métiers (SLAM)</p>
+							</div>
+						</div>
+
+						<div class="timeline-block timeline-block-left">
+							<div class="marker"></div>
+							<div class="timeline-content">
+								<h3 style="color: white; font-weight: 600; font-size: 24px;">30/05/2021 - 25/06/2021
+								</h3>
+								<span style="color: white; font-weight: 500; font-size: 18px;">
+									Stage de 4 semaines au sein de l'entreprise Allographique à Divion
+								</span>
+								<p style="color: grey; font-weight: 300; font-size: 14px;">
+									Découverte, approfondissement, et conception du design web à l'aide du CMS Wordpress et de Css à partir d'un cahier des charges prédéfini avec le client, ainsi qu'une maquette préalablement préparée/rechercher
+								</p>
+							</div>
+						</div>
+
+						<div class="timeline-block timeline-block-right">
+							<div class="marker"></div>
+							<div class="timeline-content">
+								<h3 style="color: white; font-weight: 600; font-size: 24px;">2022</h3>
+								<span style="color: white; font-weight: 500; font-size: 18px;">
+									2ème année de Brevet Technicien Supérieur Services Informatiques aux Organisations</span>
+								<p v>Avec l'option Solutions logiciels Appliqués Métiers (SLAM)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#close">
+				<button title="Close" class="close">x</button>
+			</a>
+		</div>
+	</section>
+	<!-- Fin A propos de moi section -->
+{% endblock %}
+
+{% block BTSSIO %}
+	<!-- BTS SIO Section -->
+
+	<div id="BTS" style="position: relative; margin-bottom: 60px;"></div>
+	<section class="BTSSIO">
+		<p class="title" style="margin-bottom: 20px;">Qu'est ce que le BTS SIO ?</p>
+		<p class="sub-title" style="padding: 0 50px;">Le BTS Services informatiques aux Organisations est un diplôme reconnu par l’état de niveau Bac+2. Il remplace depuis septembre 2011 l’ancien BTS informatique de Gestion (BTS IG). En effet, cette nouvelle formule répond aux attentes de la   profession en matière de qualification. Le programme a évolué en fonction de la place et du rôle des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes :
+		</p>
+		<div class="BTSPresentation">
+			<div class='parent' style="margin-right: 20px;">
+				<div class='child'>
+					<span style="font-size: 32px; font-weight: 600;">SISR (Solutions d'Infrastructure, Systèmes et réseaux)</span>
+					<br><br><span style="font-size: 17px; font-weight: 400;">Le titulaire d’un BTS SIO spécialisé SISR, est capable d’installer, d’administrer et de gérer la maintenance des équipements et des réseaux informatiques. Il est également en mesure d’intervenir au niveau de la configuration, le suivi, l’intégration, la sécurisation et l’optimisation des serveurs, des postes clients et des équipements d’interconnexion.</span>
+					<br><a href="#" class="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						En savoir plus !
+					</a>
+				</div>
+			</div>
+			<div class='parent' style="margin-right: 20px;">
+				<div class='child'>
+					<span style="font-size: 32px; font-weight: 600;">SLAM (Solutions Logicielles et Applications Métiers) (La mienne)</span>
+					<br><br><span style="font-size: 17px; font-weight: 400;">Le titulaire d’un BTS SIO spécialisé SLAM, est capable de réaliser des logiciels et des sites web, de rédiger de la documentation liée à la solution applicative, de former des utilisateurs et de faire de la maintenance applicative.</span>
+					<br><br><br><a href="#" class="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						En savoir plus !
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Fin BTS SIO Section -->
+{% endblock %}
+
+{% block Projets %}
+   <!-- Ancre de la gallery -->
+        <div id="gallery" style="visibility: hidden; margin-top: -60px; margin-bottom: 50px;"></div>
+        <!-- Fin certification complémentaires -->
+
+        <!-- Gallery mes projets section -->
+        <section class="gallery" id="close2">
+            <p class="title" style="margin-bottom: 20px;">Mes projets terminés ou en cours </p>
+            <p class="sub-title" style="padding: 0 50px; margin-bottom: 20px;"> Cette galerie filtrable vous présente tous les projets que j'ai mené, terminés ou non, en cours ou non.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="gallery-filter">
+                        <span class="filter-item active" data-filter="all">Tous</span>
+                        <span class="filter-item" data-filter="StagePremiereAnnee">Stage Premiere Annee (Allographique)</span>
+                        <span class="filter-item" data-filter="StageDeuxiemeAnnee">Stage Deuxieme Annee</span>
+                        <span class="filter-item" data-filter="ProjetPersonnel">Projet Personnel</span>
+                        <span class="filter-item" data-filter="ProjetEtude">Projet D'étude</span>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="row">
+                        <!-- gallery item start -->
+                        <div class="gallery-item StagePremiereAnnee">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <div class="img-comp-img">
+                                        <img src="dbconsult after2.png" loading="lazy">
+                                    </div>
+                                    <div class="img-comp-img img-comp-overlay">
+                                        <img src="dbconsult before.png" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site pour dbconsult</h1>
+                            <a href="#open__modal2"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal2">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                        <div id="modal-content">
+                                            <div style="display:block;">
+                                                <img src="dbconsult after.png" alt="dbconsult site" loading="lazy">
+                                                <p style="color: white; width: 400px; margin: 0 auto;">Cette photo représente le site que j'ai rendu durant la fin de ma journée d'essai celui-ci a était modifier par la suite par besoins du client et par changement de logo et ajout de certaines choses </p>
+                                            </div>
+                                            <div style="display:block; margin: auto 5px; text-align: center;">
+                                                <p class="title"> Dbconsult</p>
+                                                <p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> Présentation </i> </u> : Dbconsult, spécialiste dans l’étude de stabilité dans le secteur de la construction.</p>
+                                                <br><p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> Informations </i> </u> : Ce site a était commencer durant une journée d'essai que j'ai réaliser pour mon stage et terminer par mon tuteur ou un de ses collègues, à partir de maquette rechercher nous avons pu réaliser le site qui satisfaisait les besoins du client</p>
+                                            </div>
+                                        </div>
+                                        <br><p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> Compétences acquises </i> </u> : -Développer la présence en ligne de l'entreprise, <br> - Travailler en mode projet, <br> - Mettre à dispositions des utilisateurs un service informatique, <br> - répondre aux incidents et demandes d'assistance et d'évolutions </p>
+                                        <br><p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> NB </i> </u> : Je tiens également à préciser que le site a été réaliser selon les goûts du client, le site final n'est en aucun cas le goût du développeur, et que le site est encore mener a changer et évoluer si le client le souhaite, étant donnée que une première maquette est donnée au client pour savoir si cela lui convient sinon le site peux complétement voir partiellement changer selon ce qu'il veut.</p>
+                                        <a href="http://dbconsul.vds192.hiwit.net/"><div class="btnPerso2" style="margin-top: 15px;"><button class="raise btnPerso">Voir le site !</button></div></a>
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item StagePremiereAnnee">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <div class="img-comp-img">
+                                        <img src="kinésio carine after.png" loading="lazy">
+                                    </div>
+                                    <div class="img-comp-img img-comp-overlay">
+                                        <img src="kinésio carine before.png" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site pour KinésioCarine</h1>
+                            <a href="#open__modal3"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal3">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                        <div id="modal-content">
+                                            <div style="display:block;">
+                                                <img src="kinésio carine after.png" alt="KinésioCarine site" loading="lazy">
+                                                <p style="color: white; width: 400px;">Cette photo représente le site rendu par mes soins à la fin de ma période de stage au client</p>
+                                            </div>
+                                            <div style="display:block; margin: 10px 15px; text-align: center;">
+                                                <p class="title"> KinésioCarine </p>
+                                                <p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> Présentation </i> </u> : KinésioCarine, spécialiste dans la kinésiologie à Amay en Belgique</p>
+                                                <br><p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> Informations </i> </u> : Ce site a était réaliser durant ma période de stage, à partir de maquette rechercher sur le web ou crée nous avons pu réaliser une première maquette qui satisfaisait les besoins du client, pour ensuite changer s'il le souhaitait</p>
+                                            </div>
+                                        </div>
+                                        <br><p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> Compétences acquises </i> </u> : -Développer la présence en ligne de l'entreprise, <br> - Travailler en mode projet (Conception/ Recherche de la maquette, Réalisation du site via Wordpress, Test et validation par le client et l'employé avant envoi), <br> - Mettre à dispositions des utilisateurs un service informatique, <br> - répondre aux incidents et demandes d'assistance et d'évolutions </p>
+                                        <br><p style="font-size: 18px; color: rgb(136, 133, 133);"> <u><i> NB </i> </u> : Je tiens également à préciser que le site a été réaliser selon les goûts du client, le site final n'est en aucun cas le goût du développeur, et que le site est encore mener a changer, évoluer si le client le souhaite, étant donnée que une première maquette est donnée au client pour savoir si cela lui convient sinon le site peux complétement voir partiellement changer selon ce qu'il veut.</p>
+                                        <div style="display:flex; justify-content: center;">
+                                            <a href="kinésio carine after.png" style="width: auto;"><div class="btnPerso2" style="margin: 0px; width: auto;"><button class="raise btnPerso">Voir le site !</button></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item StagePremiereAnnee">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <div class="img-comp-img">
+                                    <img src="Dominique Roisin le Chauve after.webp" loading="lazy">
+                                    </div>
+                                    <div class="img-comp-img img-comp-overlay">
+                                    <img src="Dominique Roisin le Chauve before.webp" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site pour Dominique Roisin LeChauve</h1>
+                            <a href="#open__modal4"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal4">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                          
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item StagePremiereAnnee">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <div class="img-comp-img">
+                                        <img src="lacroix after.webp" loading="lazy">
+                                    </div>
+                                    <div class="img-comp-img img-comp-overlay">
+                                        <img src="lacroix before.webp" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site pour electricienLaCroix</h1>
+                            <a href="#open__modal5"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal5">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                          
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item StagePremiereAnnee">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <img src="tmsTerrassement.webp" alt="camera" loading="lazy">
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site pour tmsTerrassement</h1>
+                            <a href="#open__modal6"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal6">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                          
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <div class="gallery-item StagePremiereAnnee">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <div class="img-comp-img">
+                                        <img src="cdaAvocats after.webp" loading="lazy">
+                                    </div>
+                                    <div class="img-comp-img img-comp-overlay">
+                                         <img src="cdaAvocats before.png" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site pour cdaAvocats</h1>
+                            <a href="#open__modal7"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal7">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                          
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item ProjetPersonnel">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <img src="instaCréation.webp" alt="camera" loading="lazy">
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un clone d'instagram</h1>
+                            <a href="#open__modal8"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal8">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                          
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item ProjetPersonnel">
+                            <div class="gallery-item-inner">
+                                <div class="img-comp-container">
+                                    <img src="ExempleSite.webp" alt="camera" loading="lazy">
+                                </div>
+                            </div>
+                            <h1 class="tooltip">Création d'un site (mon premier site réalisé)</h1>
+                            <a href="#open__modal9"><div class="btnPerso2"><button class="raise btnPerso">En savoir plus !</button></div></a>
+                            <div class="modal-container" id="open__modal9">
+                                <a href="#close2" class="fermer"></a>
+                                <div class="pre-modal">
+                                    <div class="modal"> 
+                                          
+                                    </div>
+                                </div>
+                                <a href="#close2"><button title="Close" class="close">x</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Gallery mes projets section -->
+{% endblock %}
